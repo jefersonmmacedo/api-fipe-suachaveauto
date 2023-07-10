@@ -11,7 +11,6 @@ const cookieParser = require('cookie-parser');
 
 const server = http.createServer(app);
 
-
 app.use(cors());
 dotenv.config();
 
@@ -29,7 +28,7 @@ const io = new Server(server, {
 });
 
 app.get("/", (req, res) => {
-  return res.json("API Mail Inicialized!");
+  return res.json("API Fipe Placa Inicialized!");
 });
 
 export {server, io}
